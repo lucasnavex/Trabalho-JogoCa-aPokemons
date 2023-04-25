@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url(../font/pokemon/Pokemon\ Solid.ttf);
+}
+@font-face {
+    font-family: 'Cocogo';
+    src: url(../font/cocogoose_classic/Cocogoose-Classic-Medium-trial.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: auto;
+    background-image: url(../imagens/pokemons.jpg);
+    background-repeat: no-repeat;
+    
+    
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Pokemon';
+}
+.paragrafo{
+    font-family: 'Cocogo';
+    text-align: center;
+    font-size: 20px;
+}
+
+.container{
+    background-color: rgb(206, 47, 47);
+    width: 250px;
+    opacity: 0.85;
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    border: 5px solid;
+    border-radius: 15px;
+}
+.container ul{
+    font-family: 'Cocogo';
+    list-style: none;
+    font-size: 25px;
+}
+
+img{
+    width: 80px;
+}
+
+.Poke1{
+    position: absolute;
+    left: 700px;
+    top: 500px;
+}
+
+.Poke2{
+    position: absolute;
+    left: 1100px;
+}
+
+.Poke3{
+    position: absolute;
+    left: 300px;
+    top: 440px;
+}
+
+.Poke4{
+    position: absolute;
+    left: 1100px;
+    top: 530px;
+}
+
+#contador{
+    background-color: rgb(206, 47, 47);
+    opacity: 0.85;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    border: 5px solid;
+    border-radius: 17px;
+    left: 10px;
+    top: 250px;
+    height: 30px;
+}
+
+#placar{
+    background-color: rgb(206, 47, 47);
+    opacity: 0.85;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    border: 5px solid;
+    border-radius: 17px;
+    left: 160px;
+    top: 250px;
+    height: 30px;
+}
