@@ -7,10 +7,10 @@ let placar = document.getElementById('placar')
 
 window.onload = function (){
     contar()
-            
+    imagens.addEventListener('click', clicarPokemon); 
 }
 
-imagens.addEventListener('click', evento =>{
+function clicarPokemon(evento) {
     placar.innerHTML++;
     let idPokemonClicado = evento.target.id;
     pokemons.forEach(imagem => {
@@ -19,23 +19,19 @@ imagens.addEventListener('click', evento =>{
         }
     });
     lista.forEach(listaPoke =>{
-        if (listaPoke.id === idPokemonClicado) {
-            listaPoke.remove();
+    if (listaPoke.id === idPokemonClicado) {
+        listaPoke.remove();
         }
     });
-});
-
-function contar(){
-    setInterval(function(timer) {
-        contador.innerText = i;
-        if(i <= 15 && i > 0){
-            i--
-            
-        }
-        
-    }, 1000);
-    
 }
 
-
-
+function contar(){
+    setInterval(function() {
+    contador.innerText = i;
+    if(i <= 15 && i > 0){
+        i--;
+    } else if (i == 0) {
+        imagens.removeEventListener('click', clicarPokemon); 
+        }
+    }, 1000);
+}
