@@ -13,7 +13,7 @@
 }
 
 body{
-    background-size: auto;
+    background-size: cover;
     background-image: url(../imagens/pokemons.jpg);
     background-repeat: no-repeat;
     
